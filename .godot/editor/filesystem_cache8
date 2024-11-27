@@ -1,0 +1,15 @@
+ea4bc82a6ad023ab7ee23ee620429895
+::res://::1732691143
+icon.svg::CompressedTexture2D::8168359008506208132::1732639351::1732639362::1::::<><>::
+::res://assets/::1732642859
+::res://assets/GeometryDashWave-main/::1732642859
+Box.png::CompressedTexture2D::5164989471600067479::1732639538::1732642859::1::::<><>::
+README.md::TextFile::-1::1732639538::0::1::::<><>::
+Triangle.png::CompressedTexture2D::414051750532784159::1732639538::1732642859::1::::<><>::
+::res://scenes/::1732650581
+node_2d.tscn::PackedScene::3392750531339290178::1732650581::0::1::::<><>::uid://b8vhd8782eyn3::::res://scenes/player.tscn<>uid://b6x1ru1fm38s1::::res://scenes/spike.tscn
+player.tscn::PackedScene::4746436617154436518::1732650296::0::1::::<><>::uid://f5tmv3x6cjp4::::res://assets/GeometryDashWave-main/Triangle.png<>res://scripts/player.gd
+spike.tscn::PackedScene::4611365616000061250::1732650296::0::1::::<><>::uid://cft7vfaocngyh::::res://assets/GeometryDashWave-main/Box.png<>res://scripts/spike.gd
+::res://scripts/::1732650295
+player.gd::GDScript::-1::1732645383::0::1::::<>CharacterBody2D<>::
+spike.gd::GDScript::-1::1732650295::0::1::::<>Area2D<>::
