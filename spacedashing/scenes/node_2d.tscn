@@ -1,0 +1,32 @@
+[gd_scene load_steps=4 format=3 uid="uid://bolqdubddy4uw"]
+
+[ext_resource type="PackedScene" uid="uid://b8vhd8782eyn3" path="res://scenes/player.tscn" id="1_rhs86"]
+[ext_resource type="PackedScene" uid="uid://b6x1ru1fm38s1" path="res://scenes/spike.tscn" id="1_vgm8a"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_octrx"]
+size = Vector2(16, 234)
+
+[node name="World" type="Node2D"]
+
+[node name="Player" parent="." instance=ExtResource("1_rhs86")]
+position = Vector2(64, 96)
+
+[node name="Node2D" type="Node2D" parent="."]
+
+[node name="Spike" parent="Node2D" instance=ExtResource("1_vgm8a")]
+position = Vector2(328, -16)
+
+[node name="Spike2" parent="Node2D" instance=ExtResource("1_vgm8a")]
+position = Vector2(456, -8)
+
+[node name="Spike3" parent="Node2D" instance=ExtResource("1_vgm8a")]
+position = Vector2(544, 0)
+
+[node name="Spike4" parent="Node2D" instance=ExtResource("1_vgm8a")]
+position = Vector2(608, -24)
+
+[node name="LeftOfScreen" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="LeftOfScreen"]
+position = Vector2(-24, 96)
+shape = SubResource("RectangleShape2D_octrx")
